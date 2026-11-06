@@ -1,0 +1,37 @@
+{
+  "customers": 8000,
+  "churn_rate": 0.2159,
+  "models": {
+    "logreg": {
+      "cv_auc_mean": 0.8128,
+      "cv_auc_std": 0.0165,
+      "test_auc": 0.8092,
+      "test_pr_auc": 0.5317,
+      "test_brier": 0.133
+    },
+    "gbm": {
+      "cv_auc_mean": 0.8001,
+      "cv_auc_std": 0.018,
+      "test_auc": 0.7978,
+      "test_pr_auc": 0.4918,
+      "test_brier": 0.1371
+    }
+  },
+  "selected_model": "logreg",
+  "top_features": [
+    "contract",
+    "tenure_months",
+    "nps_score",
+    "logins_30d",
+    "support_tickets_90d"
+  ],
+  "campaign": {
+    "offer_cost_sek": 200.0,
+    "success_rate": 0.35,
+    "best_pct_contacted": 35,
+    "best_profit_sek": 95911,
+    "churners_reached": 307,
+    "churners_in_test_set": 432,
+    "profit_if_contact_everyone_sek": -77696
+  }
+}
